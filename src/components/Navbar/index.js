@@ -1,14 +1,15 @@
 import React from "react";
+import { ContainerNavbar, ItemMenu } from "./styled";
 
 function Navbar() {
   return (
-    <nav>
-      <span>home</span>
-      <span>shop</span>
-      <span>about</span>
-      <span>contact</span>
-    </nav>
+    <ContainerNavbar>
+      <ItemMenu>home</ItemMenu>
+      <ItemMenu>shop</ItemMenu>
+      <ItemMenu>about</ItemMenu>
+      <ItemMenu>contact</ItemMenu>
+    </ContainerNavbar>
   );
 }
 
-export default Navbar
+export default Navbar;
