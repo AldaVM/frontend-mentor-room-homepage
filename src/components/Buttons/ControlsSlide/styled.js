@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { COLOR_BLACK, COLOR_VERY_DARK_GRAY } from "../../../constants/styles";
+import {
+  COLOR_BLACK,
+  COLOR_VERY_DARK_GRAY,
+  MOBILE_SIZE,
+} from "../../../constants/styles";
 
 export const ContainerAbsolute = styled.div`
   position: absolute;
@@ -18,6 +22,10 @@ export const ContainerControls = styled.div`
   display: flex;
   position: relative;
   right: -156px;
+
+  @media only screen and (max-width: ${MOBILE_SIZE}) {
+    right: 0;
+  }
 `;
 
 export const ContainerSlide = styled.div`
@@ -28,5 +36,9 @@ export const ContainerSlide = styled.div`
 
   :hover {
     background-color: ${COLOR_VERY_DARK_GRAY};
+  }
+
+  @media only screen and (max-width: ${MOBILE_SIZE}) {
+    padding: 1rem;
   }
 `;

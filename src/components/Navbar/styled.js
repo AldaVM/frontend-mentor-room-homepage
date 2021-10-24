@@ -1,10 +1,14 @@
 import styled from "styled-components";
-import { COLOR_WHITE } from "../../constants/styles";
+import { COLOR_WHITE, MOBILE_SIZE } from "../../constants/styles";
 
 export const ContainerNavbar = styled.nav`
   width: 100%;
   padding-left: 3rem;
   display: flex;
+
+  @media only screen and (max-width: ${MOBILE_SIZE}) {
+    display: none;
+  }
 `;
 
 export const ItemMenu = styled.span`
