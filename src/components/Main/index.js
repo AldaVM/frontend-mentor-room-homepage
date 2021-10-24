@@ -1,11 +1,11 @@
 import React from "react";
-import Banner from "../SlideProducts/Banner";
-
+import Slide from "../SlideProducts/Slide";
+import { ContainerMain } from "./styled";
 function Main() {
   return (
-    <main>
-      <Banner />
-    </main>
+    <ContainerMain>
+      <Slide />
+    </ContainerMain>
   );
 }
 
